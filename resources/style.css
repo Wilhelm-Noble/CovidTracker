@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: Center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://saiplatform.org/wp-content/uploads/2020/05/background-c19.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  .container {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+  .card-deck {
+    margin: 0 -25px;
+    justify-content: center;
+  }
+  .card p {
+    font-size: 1.4rem;
+    border: 1px solid #fff;
+  }
+  h1 {
+    font-size: 2rem;
+    font-family: consolas;
+  }
+  img {
+    width: 60px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 48.7%;
+      flex: 0 0 48.7%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 32%;
+      flex: 0 0 32%;
+    }
+  }
+  @media (min-width: 992px) {
+    .card-deck .card {
+      -ms-flex: 0 0 24%;
+      flex: 0 0 24%;
+    }
+  }
+  .animatediv img:nth-child(1) {
+    position: absolute;
+    right: -6rem;
+    top: -8rem;
+  }
+  .animatediv img:nth-child(2) {
+    position: absolute;
+    left: -38rem;
+    top: -3rem;
+  }
+  .animatediv img:nth-child(3) {
+    position: absolute;
+    left: -6rem;
+    bottom: -42rem;
+  }
+  .animatediv img:nth-child(4) {
+    position: absolute;
+    left: -36rem;
+    bottom: -42rem;
+  }
+  .animatediv {
+    animation: MoveUpDown 10s linear infinite alternate-reverse;
+    position: absolute;
+    right: 300px;
+  }
+  /* position of corona animation */
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      top: 150px;
+    }
+    50% {
+      top: 250px;
+    }
+  }
+
+  .title{
+    color: white;
+  }
+
+  
